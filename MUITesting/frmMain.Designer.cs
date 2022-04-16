@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.muiRadioButton3 = new MUIControls.muiRadioButton();
+            this.muiRadioButton2 = new MUIControls.muiRadioButton();
+            this.muiRadioButton1 = new MUIControls.muiRadioButton();
+            this.muiProgressBar1 = new MUIControls.muiProgressBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.muiProgressBar1 = new MUIControls.muiProgressBar();
             this.muiComboBox4 = new MUIControls.muiComboBox();
             this.muiComboBox3 = new MUIControls.muiComboBox();
             this.muiComboBox1 = new MUIControls.muiComboBox();
@@ -45,6 +46,9 @@
             this.muiButton3 = new MUIControls.muiButton();
             this.muiButton2 = new MUIControls.muiButton();
             this.muiButton1 = new MUIControls.muiButton();
+            this.muiRadioButton4 = new MUIControls.muiRadioButton();
+            this.muiRadioButton5 = new MUIControls.muiRadioButton();
+            this.muiRadioButton6 = new MUIControls.muiRadioButton();
             this.muiProgressBar2 = new MUIControls.muiProgressBar();
             this.muiComboBox5 = new MUIControls.muiComboBox();
             this.muiComboBox6 = new MUIControls.muiComboBox();
@@ -55,18 +59,20 @@
             this.muiButton4 = new MUIControls.muiButton();
             this.muiButton5 = new MUIControls.muiButton();
             this.muiButton6 = new MUIControls.muiButton();
-            this.muiRadioButton1 = new MUIControls.muiRadioButton();
-            this.muiRadioButton2 = new MUIControls.muiRadioButton();
-            this.muiRadioButton3 = new MUIControls.muiRadioButton();
-            this.muiRadioButton4 = new MUIControls.muiRadioButton();
-            this.muiRadioButton5 = new MUIControls.muiRadioButton();
-            this.muiRadioButton6 = new MUIControls.muiRadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.muiTabControl1 = new MUIControls.muiTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.muiTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -96,6 +102,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
+            this.splitContainer1.Panel2.Controls.Add(this.muiTabControl1);
             this.splitContainer1.Panel2.Controls.Add(this.muiRadioButton4);
             this.splitContainer1.Panel2.Controls.Add(this.muiRadioButton5);
             this.splitContainer1.Panel2.Controls.Add(this.muiRadioButton6);
@@ -112,6 +119,64 @@
             this.splitContainer1.Size = new System.Drawing.Size(984, 464);
             this.splitContainer1.SplitterDistance = 491;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // muiRadioButton3
+            // 
+            this.muiRadioButton3.AutoSize = true;
+            this.muiRadioButton3.CheckedColor = System.Drawing.Color.DodgerBlue;
+            this.muiRadioButton3.Location = new System.Drawing.Point(330, 180);
+            this.muiRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
+            this.muiRadioButton3.Name = "muiRadioButton3";
+            this.muiRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.muiRadioButton3.Size = new System.Drawing.Size(135, 21);
+            this.muiRadioButton3.TabIndex = 22;
+            this.muiRadioButton3.Text = "muiRadioButton3";
+            this.muiRadioButton3.UnCheckedColor = System.Drawing.Color.DodgerBlue;
+            this.muiRadioButton3.UseVisualStyleBackColor = true;
+            // 
+            // muiRadioButton2
+            // 
+            this.muiRadioButton2.AutoSize = true;
+            this.muiRadioButton2.CheckedColor = System.Drawing.Color.Orange;
+            this.muiRadioButton2.Location = new System.Drawing.Point(172, 180);
+            this.muiRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
+            this.muiRadioButton2.Name = "muiRadioButton2";
+            this.muiRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.muiRadioButton2.Size = new System.Drawing.Size(135, 21);
+            this.muiRadioButton2.TabIndex = 21;
+            this.muiRadioButton2.Text = "muiRadioButton2";
+            this.muiRadioButton2.UnCheckedColor = System.Drawing.Color.DarkOrange;
+            this.muiRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // muiRadioButton1
+            // 
+            this.muiRadioButton1.AutoSize = true;
+            this.muiRadioButton1.Checked = true;
+            this.muiRadioButton1.CheckedColor = System.Drawing.Color.Teal;
+            this.muiRadioButton1.Location = new System.Drawing.Point(14, 180);
+            this.muiRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
+            this.muiRadioButton1.Name = "muiRadioButton1";
+            this.muiRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.muiRadioButton1.Size = new System.Drawing.Size(135, 21);
+            this.muiRadioButton1.TabIndex = 20;
+            this.muiRadioButton1.TabStop = true;
+            this.muiRadioButton1.Text = "muiRadioButton1";
+            this.muiRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
+            this.muiRadioButton1.UseVisualStyleBackColor = true;
+            // 
+            // muiProgressBar1
+            // 
+            this.muiProgressBar1.ChannelColor = System.Drawing.Color.LightBlue;
+            this.muiProgressBar1.ChannelHeight = 10;
+            this.muiProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
+            this.muiProgressBar1.ForeColor = System.Drawing.Color.White;
+            this.muiProgressBar1.Location = new System.Drawing.Point(14, 156);
+            this.muiProgressBar1.Name = "muiProgressBar1";
+            this.muiProgressBar1.Size = new System.Drawing.Size(466, 12);
+            this.muiProgressBar1.SliderColor = System.Drawing.Color.RoyalBlue;
+            this.muiProgressBar1.SliderHeight = 10;
+            this.muiProgressBar1.TabIndex = 19;
+            this.muiProgressBar1.Value = 50;
             // 
             // dataGridView1
             // 
@@ -144,42 +209,6 @@
             // 
             this.Column3.HeaderText = "Phone";
             this.Column3.Name = "Column3";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 47);
-            this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(984, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manu\'s UI Controls";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // muiProgressBar1
-            // 
-            this.muiProgressBar1.ChannelColor = System.Drawing.Color.LightBlue;
-            this.muiProgressBar1.ChannelHeight = 10;
-            this.muiProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.muiProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.muiProgressBar1.Location = new System.Drawing.Point(14, 156);
-            this.muiProgressBar1.Name = "muiProgressBar1";
-            this.muiProgressBar1.Size = new System.Drawing.Size(466, 12);
-            this.muiProgressBar1.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.muiProgressBar1.SliderHeight = 10;
-            this.muiProgressBar1.TabIndex = 19;
-            this.muiProgressBar1.Value = 50;
             // 
             // muiComboBox4
             // 
@@ -328,6 +357,53 @@
             this.muiButton1.TabIndex = 9;
             this.muiButton1.Text = "muiButton1";
             this.muiButton1.UseVisualStyleBackColor = false;
+            // 
+            // muiRadioButton4
+            // 
+            this.muiRadioButton4.AutoSize = true;
+            this.muiRadioButton4.CheckedColor = System.Drawing.Color.DodgerBlue;
+            this.muiRadioButton4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.muiRadioButton4.Location = new System.Drawing.Point(329, 180);
+            this.muiRadioButton4.MinimumSize = new System.Drawing.Size(0, 21);
+            this.muiRadioButton4.Name = "muiRadioButton4";
+            this.muiRadioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.muiRadioButton4.Size = new System.Drawing.Size(135, 21);
+            this.muiRadioButton4.TabIndex = 25;
+            this.muiRadioButton4.Text = "muiRadioButton4";
+            this.muiRadioButton4.UnCheckedColor = System.Drawing.Color.DodgerBlue;
+            this.muiRadioButton4.UseVisualStyleBackColor = true;
+            // 
+            // muiRadioButton5
+            // 
+            this.muiRadioButton5.AutoSize = true;
+            this.muiRadioButton5.CheckedColor = System.Drawing.Color.Orange;
+            this.muiRadioButton5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.muiRadioButton5.Location = new System.Drawing.Point(171, 180);
+            this.muiRadioButton5.MinimumSize = new System.Drawing.Size(0, 21);
+            this.muiRadioButton5.Name = "muiRadioButton5";
+            this.muiRadioButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.muiRadioButton5.Size = new System.Drawing.Size(135, 21);
+            this.muiRadioButton5.TabIndex = 24;
+            this.muiRadioButton5.Text = "muiRadioButton5";
+            this.muiRadioButton5.UnCheckedColor = System.Drawing.Color.DarkOrange;
+            this.muiRadioButton5.UseVisualStyleBackColor = true;
+            // 
+            // muiRadioButton6
+            // 
+            this.muiRadioButton6.AutoSize = true;
+            this.muiRadioButton6.Checked = true;
+            this.muiRadioButton6.CheckedColor = System.Drawing.Color.Teal;
+            this.muiRadioButton6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.muiRadioButton6.Location = new System.Drawing.Point(13, 180);
+            this.muiRadioButton6.MinimumSize = new System.Drawing.Size(0, 21);
+            this.muiRadioButton6.Name = "muiRadioButton6";
+            this.muiRadioButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.muiRadioButton6.Size = new System.Drawing.Size(135, 21);
+            this.muiRadioButton6.TabIndex = 23;
+            this.muiRadioButton6.TabStop = true;
+            this.muiRadioButton6.Text = "muiRadioButton6";
+            this.muiRadioButton6.UnCheckedColor = System.Drawing.Color.Teal;
+            this.muiRadioButton6.UseVisualStyleBackColor = true;
             // 
             // muiProgressBar2
             // 
@@ -496,96 +572,89 @@
             this.muiButton6.Text = "muiButton6";
             this.muiButton6.UseVisualStyleBackColor = false;
             // 
-            // muiRadioButton1
+            // panel1
             // 
-            this.muiRadioButton1.AutoSize = true;
-            this.muiRadioButton1.Checked = true;
-            this.muiRadioButton1.CheckedColor = System.Drawing.Color.Teal;
-            this.muiRadioButton1.Location = new System.Drawing.Point(14, 180);
-            this.muiRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
-            this.muiRadioButton1.Name = "muiRadioButton1";
-            this.muiRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.muiRadioButton1.Size = new System.Drawing.Size(135, 21);
-            this.muiRadioButton1.TabIndex = 20;
-            this.muiRadioButton1.TabStop = true;
-            this.muiRadioButton1.Text = "muiRadioButton1";
-            this.muiRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
-            this.muiRadioButton1.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 47);
+            this.panel1.TabIndex = 1;
             // 
-            // muiRadioButton2
+            // label1
             // 
-            this.muiRadioButton2.AutoSize = true;
-            this.muiRadioButton2.CheckedColor = System.Drawing.Color.Orange;
-            this.muiRadioButton2.Location = new System.Drawing.Point(172, 180);
-            this.muiRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
-            this.muiRadioButton2.Name = "muiRadioButton2";
-            this.muiRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.muiRadioButton2.Size = new System.Drawing.Size(135, 21);
-            this.muiRadioButton2.TabIndex = 21;
-            this.muiRadioButton2.Text = "muiRadioButton2";
-            this.muiRadioButton2.UnCheckedColor = System.Drawing.Color.DarkOrange;
-            this.muiRadioButton2.UseVisualStyleBackColor = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(984, 47);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manu\'s UI Controls";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // muiRadioButton3
+            // muiTabControl1
             // 
-            this.muiRadioButton3.AutoSize = true;
-            this.muiRadioButton3.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.muiRadioButton3.Location = new System.Drawing.Point(330, 180);
-            this.muiRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
-            this.muiRadioButton3.Name = "muiRadioButton3";
-            this.muiRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.muiRadioButton3.Size = new System.Drawing.Size(135, 21);
-            this.muiRadioButton3.TabIndex = 22;
-            this.muiRadioButton3.Text = "muiRadioButton3";
-            this.muiRadioButton3.UnCheckedColor = System.Drawing.Color.DodgerBlue;
-            this.muiRadioButton3.UseVisualStyleBackColor = true;
+            this.muiTabControl1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.muiTabControl1.ButtonBackColor = System.Drawing.Color.WhiteSmoke;
+            this.muiTabControl1.ButtonForeColor = System.Drawing.Color.Black;
+            this.muiTabControl1.ButtonSelectedForeColor = System.Drawing.Color.CornflowerBlue;
+            this.muiTabControl1.Controls.Add(this.tabPage1);
+            this.muiTabControl1.Controls.Add(this.tabPage2);
+            this.muiTabControl1.Controls.Add(this.tabPage3);
+            this.muiTabControl1.Controls.Add(this.tabPage4);
+            this.muiTabControl1.HideButton = false;
+            this.muiTabControl1.ItemSize = new System.Drawing.Size(100, 30);
+            this.muiTabControl1.LineBackColor = System.Drawing.Color.Gainsboro;
+            this.muiTabControl1.LineForeColor = System.Drawing.Color.LightSeaGreen;
+            this.muiTabControl1.Location = new System.Drawing.Point(25, 247);
+            this.muiTabControl1.Name = "muiTabControl1";
+            this.muiTabControl1.SelectedIndex = 0;
+            this.muiTabControl1.Size = new System.Drawing.Size(439, 189);
+            this.muiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.muiTabControl1.Style = MUIControls.muiTabControl.TabStyle.Line;
+            this.muiTabControl1.TabIndex = 26;
             // 
-            // muiRadioButton4
+            // tabPage1
             // 
-            this.muiRadioButton4.AutoSize = true;
-            this.muiRadioButton4.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.muiRadioButton4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.muiRadioButton4.Location = new System.Drawing.Point(329, 180);
-            this.muiRadioButton4.MinimumSize = new System.Drawing.Size(0, 21);
-            this.muiRadioButton4.Name = "muiRadioButton4";
-            this.muiRadioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.muiRadioButton4.Size = new System.Drawing.Size(135, 21);
-            this.muiRadioButton4.TabIndex = 25;
-            this.muiRadioButton4.Text = "muiRadioButton4";
-            this.muiRadioButton4.UnCheckedColor = System.Drawing.Color.DodgerBlue;
-            this.muiRadioButton4.UseVisualStyleBackColor = true;
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(431, 151);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // muiRadioButton5
+            // tabPage2
             // 
-            this.muiRadioButton5.AutoSize = true;
-            this.muiRadioButton5.CheckedColor = System.Drawing.Color.Orange;
-            this.muiRadioButton5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.muiRadioButton5.Location = new System.Drawing.Point(171, 180);
-            this.muiRadioButton5.MinimumSize = new System.Drawing.Size(0, 21);
-            this.muiRadioButton5.Name = "muiRadioButton5";
-            this.muiRadioButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.muiRadioButton5.Size = new System.Drawing.Size(135, 21);
-            this.muiRadioButton5.TabIndex = 24;
-            this.muiRadioButton5.Text = "muiRadioButton5";
-            this.muiRadioButton5.UnCheckedColor = System.Drawing.Color.DarkOrange;
-            this.muiRadioButton5.UseVisualStyleBackColor = true;
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(431, 151);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // muiRadioButton6
+            // tabPage3
             // 
-            this.muiRadioButton6.AutoSize = true;
-            this.muiRadioButton6.Checked = true;
-            this.muiRadioButton6.CheckedColor = System.Drawing.Color.Teal;
-            this.muiRadioButton6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.muiRadioButton6.Location = new System.Drawing.Point(13, 180);
-            this.muiRadioButton6.MinimumSize = new System.Drawing.Size(0, 21);
-            this.muiRadioButton6.Name = "muiRadioButton6";
-            this.muiRadioButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.muiRadioButton6.Size = new System.Drawing.Size(135, 21);
-            this.muiRadioButton6.TabIndex = 23;
-            this.muiRadioButton6.TabStop = true;
-            this.muiRadioButton6.Text = "muiRadioButton6";
-            this.muiRadioButton6.UnCheckedColor = System.Drawing.Color.Teal;
-            this.muiRadioButton6.UseVisualStyleBackColor = true;
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(431, 151);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(431, 151);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -608,6 +677,7 @@
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.muiTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -647,6 +717,11 @@
         private MUIControls.muiRadioButton muiRadioButton4;
         private MUIControls.muiRadioButton muiRadioButton5;
         private MUIControls.muiRadioButton muiRadioButton6;
+        private MUIControls.muiTabControl muiTabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }
 
