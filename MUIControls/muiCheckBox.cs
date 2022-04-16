@@ -26,14 +26,14 @@ namespace MUIControls
         }
 
         // Properties
-        [Category("Laksya Framework")]
+        [Category("MUI Controls")]
         public Color CheckedColor
         {
             get { return checkedColor; }
             set { checkedColor=value; base.Invalidate(); }
         }
 
-        [Category("Laksya Framework")]
+        [Category("MUI Controls")]
         public Color UnCheckedColor
         {
             get { return unCheckedColor; }
@@ -69,9 +69,8 @@ namespace MUIControls
                     g.DrawRectangle(penBorder, rectBorder); // Box border
 
                     // Draw the tick
-                    g.DrawLine(penCheck, 2, 10, 8, 16);
-                    g.DrawLine(penCheck, 6, 16, 16, 5);
-
+                    g.DrawLine(penCheck, 3, 10,7, 15); //\
+                    g.DrawLine(penCheck, 6, 15, 15, 5); // /
                 }
                 else
                 {
