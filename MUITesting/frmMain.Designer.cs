@@ -30,11 +30,12 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.muiProgressBar1 = new MUIControls.muiProgressBar();
             this.muiComboBox4 = new MUIControls.muiComboBox();
             this.muiComboBox3 = new MUIControls.muiComboBox();
             this.muiComboBox1 = new MUIControls.muiComboBox();
@@ -44,6 +45,7 @@
             this.muiButton3 = new MUIControls.muiButton();
             this.muiButton2 = new MUIControls.muiButton();
             this.muiButton1 = new MUIControls.muiButton();
+            this.muiProgressBar2 = new MUIControls.muiProgressBar();
             this.muiComboBox5 = new MUIControls.muiComboBox();
             this.muiComboBox6 = new MUIControls.muiComboBox();
             this.muiComboBox2 = new MUIControls.muiComboBox();
@@ -70,6 +72,8 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.splitContainer1.Panel1.Controls.Add(this.muiProgressBar1);
+            this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
             this.splitContainer1.Panel1.Controls.Add(this.muiComboBox4);
             this.splitContainer1.Panel1.Controls.Add(this.muiComboBox3);
             this.splitContainer1.Panel1.Controls.Add(this.muiComboBox1);
@@ -83,7 +87,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel2.Controls.Add(this.muiProgressBar2);
             this.splitContainer1.Panel2.Controls.Add(this.muiComboBox5);
             this.splitContainer1.Panel2.Controls.Add(this.muiComboBox6);
             this.splitContainer1.Panel2.Controls.Add(this.muiComboBox2);
@@ -108,11 +112,26 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(23, 176);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 242);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.Size = new System.Drawing.Size(426, 210);
             this.dataGridView1.TabIndex = 18;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "First Name";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Last Name";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Phone";
+            this.Column3.Name = "Column3";
             // 
             // panel1
             // 
@@ -136,20 +155,19 @@
             this.label1.Text = "MUI Controls";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column1
+            // muiProgressBar1
             // 
-            this.Column1.HeaderText = "First Name";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Last Name";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Phone";
-            this.Column3.Name = "Column3";
+            this.muiProgressBar1.ChannelColor = System.Drawing.Color.LightBlue;
+            this.muiProgressBar1.ChannelHeight = 10;
+            this.muiProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
+            this.muiProgressBar1.ForeColor = System.Drawing.Color.White;
+            this.muiProgressBar1.Location = new System.Drawing.Point(14, 156);
+            this.muiProgressBar1.Name = "muiProgressBar1";
+            this.muiProgressBar1.Size = new System.Drawing.Size(466, 23);
+            this.muiProgressBar1.SliderColor = System.Drawing.Color.RoyalBlue;
+            this.muiProgressBar1.SliderHeight = 10;
+            this.muiProgressBar1.TabIndex = 19;
+            this.muiProgressBar1.Value = 50;
             // 
             // muiComboBox4
             // 
@@ -298,6 +316,20 @@
             this.muiButton1.TabIndex = 9;
             this.muiButton1.Text = "muiButton1";
             this.muiButton1.UseVisualStyleBackColor = false;
+            // 
+            // muiProgressBar2
+            // 
+            this.muiProgressBar2.ChannelColor = System.Drawing.Color.CadetBlue;
+            this.muiProgressBar2.ChannelHeight = 10;
+            this.muiProgressBar2.ForeBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.muiProgressBar2.ForeColor = System.Drawing.Color.Black;
+            this.muiProgressBar2.Location = new System.Drawing.Point(11, 156);
+            this.muiProgressBar2.Name = "muiProgressBar2";
+            this.muiProgressBar2.Size = new System.Drawing.Size(466, 12);
+            this.muiProgressBar2.SliderColor = System.Drawing.Color.LimeGreen;
+            this.muiProgressBar2.SliderHeight = 10;
+            this.muiProgressBar2.TabIndex = 20;
+            this.muiProgressBar2.Value = 50;
             // 
             // muiComboBox5
             // 
@@ -504,6 +536,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private MUIControls.muiProgressBar muiProgressBar1;
+        private MUIControls.muiProgressBar muiProgressBar2;
     }
 }
 

@@ -20,7 +20,7 @@ namespace MUITesting
 
         private void muiComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (muiComboBox1.SelectedIndex ==0 )
+            if (muiComboBox1.SelectedIndex == 0 )
             {
                 GridViewStyle darkTheme = new GridViewStyle(dataGridView1, GridViewStyle.Style.Dark);
             }
