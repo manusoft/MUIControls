@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUIControls", "MUIControls\MUIControls.csproj", "{C1490824-8117-4D0B-A7F4-6092B8FE1DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUITesting", "MUITesting\MUITesting.csproj", "{7AB06081-2AD3-445E-8576-B4C568AAB5ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1490824-8117-4D0B-A7F4-6092B8FE1DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1490824-8117-4D0B-A7F4-6092B8FE1DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1490824-8117-4D0B-A7F4-6092B8FE1DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1490824-8117-4D0B-A7F4-6092B8FE1DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB06081-2AD3-445E-8576-B4C568AAB5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB06081-2AD3-445E-8576-B4C568AAB5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB06081-2AD3-445E-8576-B4C568AAB5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB06081-2AD3-445E-8576-B4C568AAB5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B267316-D60D-420D-A32B-D20965034B20}
+	EndGlobalSection
+EndGlobal
