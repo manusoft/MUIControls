@@ -74,6 +74,8 @@ namespace MUIControls
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
+            Graphics g = pevent.Graphics;
+
             Rectangle rectSurface = this.ClientRectangle;
             Rectangle rectBorder = Rectangle.Inflate(rectSurface, -borderSize, -borderSize);
             int smoothSize = 2;
@@ -87,21 +89,21 @@ namespace MUIControls
                 using (Pen penSurface = new Pen(this.Parent.BackColor, smoothSize))
                 using (Pen penBorder = new Pen(borderColor, borderSize))
                 {
-                    pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                    g.SmoothingMode = SmoothingMode.AntiAlias;
                     //Button surface
                     this.Region = new Region(pathSurface);
                     //Draw surface border for HD result
-                    pevent.Graphics.DrawPath(penSurface, pathSurface);
+                    g.DrawPath(penSurface, pathSurface);
 
                     //Button border                    
                     if (borderSize >= 1)
                         //Draw control border
-                        pevent.Graphics.DrawPath(penBorder, pathBorder);
+                        g.DrawPath(penBorder, pathBorder);
                 }
             }
             else //Normal button
             {
-                pevent.Graphics.SmoothingMode = SmoothingMode.None;
+                g.SmoothingMode = SmoothingMode.None;
                 //Button surface
                 this.Region = new Region(rectSurface);
                 //Button border
@@ -110,7 +112,7 @@ namespace MUIControls
                     using (Pen penBorder = new Pen(borderColor, borderSize))
                     {
                         penBorder.Alignment = PenAlignment.Inset;
-                        pevent.Graphics.DrawRectangle(penBorder, 0, 0, this.Width - 1, this.Height - 1);
+                        g.DrawRectangle(penBorder, 0, 0, this.Width - 1, this.Height - 1);
                     }
                 }
             }
