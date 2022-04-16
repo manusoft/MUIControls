@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MUIControls\MUIControls.csproj">
+      <Project>{C1490824-8117-4D0B-A7F4-6092B8FE1DE3}</Project>
+      <Name>MUIControls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
