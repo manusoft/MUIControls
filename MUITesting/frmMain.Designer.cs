@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.muiComboBox4 = new MUIControls.muiComboBox();
             this.muiComboBox3 = new MUIControls.muiComboBox();
             this.muiComboBox1 = new MUIControls.muiComboBox();
@@ -53,6 +57,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +83,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
+            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer1.Panel2.Controls.Add(this.muiComboBox5);
             this.splitContainer1.Panel2.Controls.Add(this.muiComboBox6);
             this.splitContainer1.Panel2.Controls.Add(this.muiComboBox2);
@@ -90,6 +96,23 @@
             this.splitContainer1.Size = new System.Drawing.Size(984, 464);
             this.splitContainer1.SplitterDistance = 491;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.dataGridView1.Location = new System.Drawing.Point(23, 176);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.Size = new System.Drawing.Size(426, 210);
+            this.dataGridView1.TabIndex = 18;
             // 
             // panel1
             // 
@@ -112,6 +135,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MUI Controls";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "First Name";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Last Name";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Phone";
+            this.Column3.Name = "Column3";
             // 
             // muiComboBox4
             // 
@@ -144,7 +182,7 @@
             "Female"});
             this.muiComboBox3.Location = new System.Drawing.Point(172, 113);
             this.muiComboBox3.Name = "muiComboBox3";
-            this.muiComboBox3.SelectionColor = System.Drawing.Color.DeepSkyBlue;
+            this.muiComboBox3.SelectionColor = System.Drawing.Color.Teal;
             this.muiComboBox3.Size = new System.Drawing.Size(150, 26);
             this.muiComboBox3.TabIndex = 16;
             this.muiComboBox3.UnderlinedStyle = false;
@@ -158,14 +196,15 @@
             this.muiComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.muiComboBox1.FormattingEnabled = true;
             this.muiComboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
+            "Dark",
+            "Light"});
             this.muiComboBox1.Location = new System.Drawing.Point(14, 113);
             this.muiComboBox1.Name = "muiComboBox1";
             this.muiComboBox1.SelectionColor = System.Drawing.Color.DeepSkyBlue;
             this.muiComboBox1.Size = new System.Drawing.Size(150, 26);
             this.muiComboBox1.TabIndex = 15;
             this.muiComboBox1.UnderlinedStyle = false;
+            this.muiComboBox1.SelectedIndexChanged += new System.EventHandler(this.muiComboBox1_SelectedIndexChanged);
             // 
             // muiCheckBox3
             // 
@@ -213,8 +252,8 @@
             // 
             this.muiButton3.BackColor = System.Drawing.Color.White;
             this.muiButton3.BorderColor = System.Drawing.Color.Teal;
-            this.muiButton3.BorderRadius = 5;
-            this.muiButton3.BorderSize = 1;
+            this.muiButton3.BorderRadius = 15;
+            this.muiButton3.BorderSize = 2;
             this.muiButton3.FlatAppearance.BorderSize = 0;
             this.muiButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.muiButton3.ForeColor = System.Drawing.Color.Black;
@@ -364,10 +403,10 @@
             // 
             // muiButton4
             // 
-            this.muiButton4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.muiButton4.BorderColor = System.Drawing.Color.Transparent;
-            this.muiButton4.BorderRadius = 5;
-            this.muiButton4.BorderSize = 1;
+            this.muiButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
+            this.muiButton4.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.muiButton4.BorderRadius = 15;
+            this.muiButton4.BorderSize = 2;
             this.muiButton4.FlatAppearance.BorderSize = 0;
             this.muiButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.muiButton4.ForeColor = System.Drawing.Color.White;
@@ -425,12 +464,14 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MUI Controls Tetsing";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -459,6 +500,10 @@
         private MUIControls.muiButton muiButton6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
 
