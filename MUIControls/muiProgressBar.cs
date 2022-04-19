@@ -10,29 +10,15 @@ namespace MUIControls
 {
     public class muiProgressBar: ProgressBar
     {
-        // Fields
-        // Appearance
-        private Color channelColor = Color.LightSteelBlue;
-        private Color sliderColor = Color.RoyalBlue;
-        private Color foreBackColor = Color.RoyalBlue;
-        private int channelHeight = 10;
-        private int sliderHeight = 10;
-
         // Others
         private bool paintedBack = false;
         private bool stopPainting = false;
-
-        public Color ChannelColor { get => channelColor; set { channelColor=value; this.Invalidate(); } }
-        public Color SliderColor { get => sliderColor; set { sliderColor=value; this.Invalidate(); } }
-        public Color ForeBackColor { get => foreBackColor; set { foreBackColor=value; this.Invalidate(); } }
-        public int ChannelHeight { get => channelHeight; set { channelHeight=value; this.Invalidate(); } }
-        public int SliderHeight { get => sliderHeight; set { sliderHeight=value; this.Invalidate(); } }
 
         public muiProgressBar()
         {
             this.SetStyle(System.Windows.Forms.ControlStyles.UserPaint, true);
             this.ForeColor = Color.White;
-            this.Size = new Size(this.Width , this.Width );
+            this.Size = new Size(100 , 25);
         }
 
         //-> Paint the background & channel
@@ -44,13 +30,9 @@ namespace MUIControls
                 {
                     //Fields
                     Graphics graph = pevent.Graphics;
-                    Rectangle rectChannel = new Rectangle(0, 0, this.Width, ChannelHeight);
-                    using (var brushChannel = new SolidBrush(ChannelColor))
+                    Rectangle rectChannel = new Rectangle(0, 0, this.Width, this.Height);
+                    using (var brushChannel = new SolidBrush(BackColor))
                     {
-                        if (ChannelHeight >= SliderHeight)
-                            rectChannel.Y = this.Height - ChannelHeight;
-                        else rectChannel.Y = this.Height - ((ChannelHeight + SliderHeight) / 2);
-
                         //Painting
                         graph.Clear(this.Parent.BackColor);//Surface
                         graph.FillRectangle(brushChannel, rectChannel);//Channel
@@ -65,7 +47,6 @@ namespace MUIControls
                     paintedBack = false;
             }
         }
-
         //-> Paint slider
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
@@ -75,18 +56,14 @@ namespace MUIControls
                 Graphics graph = e.Graphics;
                 double scaleFactor = (((double)this.Value - this.Minimum) / ((double)this.Maximum - this.Minimum));
                 int sliderWidth = (int)(this.Width * scaleFactor);
-                Rectangle rectSlider = new Rectangle(0, 0, sliderWidth, SliderHeight);
-                using (var brushSlider = new SolidBrush(SliderColor))
+                Rectangle rectSlider = new Rectangle(0, 0, sliderWidth, this.Height);
+                using (var brushSlider = new SolidBrush(ForeColor))
                 {
-                    if (SliderHeight >= ChannelHeight)
-                        rectSlider.Y = this.Height - SliderHeight;
-                    else rectSlider.Y = this.Height - ((SliderHeight + ChannelHeight) / 2);
-
                     //Painting
                     if (sliderWidth > 1) //Slider
                         graph.FillRectangle(brushSlider, rectSlider);
                     //if (showValue != TextPosition.None) //Text
-                    //DrawValueText(graph, sliderWidth, rectSlider);
+                    // graph.DrawString (Value.ToString(),Parent.Font,Brushes.Blue, new Point(base.Width/2,0)); 
                 }
             }
             if (this.Value == this.Maximum) stopPainting = true;//Stop painting

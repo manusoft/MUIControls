@@ -29,14 +29,19 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.muiRadioButton3 = new MUIControls.muiRadioButton();
-            this.muiRadioButton2 = new MUIControls.muiRadioButton();
-            this.muiRadioButton1 = new MUIControls.muiRadioButton();
-            this.muiProgressBar1 = new MUIControls.muiProgressBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.muiTextBox2 = new MUIControls.muiTextBox();
+            this.muiTextBox3 = new MUIControls.muiTextBox();
+            this.muiTextBox1 = new MUIControls.muiTextBox();
+            this.muiRadioButton3 = new MUIControls.muiRadioButton();
+            this.muiRadioButton2 = new MUIControls.muiRadioButton();
+            this.muiRadioButton1 = new MUIControls.muiRadioButton();
+            this.muiProgressBar1 = new MUIControls.muiProgressBar();
             this.muiComboBox4 = new MUIControls.muiComboBox();
             this.muiComboBox3 = new MUIControls.muiComboBox();
             this.muiComboBox1 = new MUIControls.muiComboBox();
@@ -46,7 +51,15 @@
             this.muiButton3 = new MUIControls.muiButton();
             this.muiButton2 = new MUIControls.muiButton();
             this.muiButton1 = new MUIControls.muiButton();
+            this.muiTextBox4 = new MUIControls.muiTextBox();
+            this.muiTabControl1 = new MUIControls.muiTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.muiTextBox5 = new MUIControls.muiTextBox();
             this.muiRadioButton4 = new MUIControls.muiRadioButton();
+            this.muiTextBox6 = new MUIControls.muiTextBox();
             this.muiRadioButton5 = new MUIControls.muiRadioButton();
             this.muiRadioButton6 = new MUIControls.muiRadioButton();
             this.muiProgressBar2 = new MUIControls.muiProgressBar();
@@ -59,13 +72,6 @@
             this.muiButton4 = new MUIControls.muiButton();
             this.muiButton5 = new MUIControls.muiButton();
             this.muiButton6 = new MUIControls.muiButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.muiTabControl1 = new MUIControls.muiTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -84,6 +90,9 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.splitContainer1.Panel1.Controls.Add(this.muiTextBox2);
+            this.splitContainer1.Panel1.Controls.Add(this.muiTextBox3);
+            this.splitContainer1.Panel1.Controls.Add(this.muiTextBox1);
             this.splitContainer1.Panel1.Controls.Add(this.muiRadioButton3);
             this.splitContainer1.Panel1.Controls.Add(this.muiRadioButton2);
             this.splitContainer1.Panel1.Controls.Add(this.muiRadioButton1);
@@ -102,8 +111,11 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
+            this.splitContainer1.Panel2.Controls.Add(this.muiTextBox4);
             this.splitContainer1.Panel2.Controls.Add(this.muiTabControl1);
+            this.splitContainer1.Panel2.Controls.Add(this.muiTextBox5);
             this.splitContainer1.Panel2.Controls.Add(this.muiRadioButton4);
+            this.splitContainer1.Panel2.Controls.Add(this.muiTextBox6);
             this.splitContainer1.Panel2.Controls.Add(this.muiRadioButton5);
             this.splitContainer1.Panel2.Controls.Add(this.muiRadioButton6);
             this.splitContainer1.Panel2.Controls.Add(this.muiProgressBar2);
@@ -116,9 +128,119 @@
             this.splitContainer1.Panel2.Controls.Add(this.muiButton4);
             this.splitContainer1.Panel2.Controls.Add(this.muiButton5);
             this.splitContainer1.Panel2.Controls.Add(this.muiButton6);
-            this.splitContainer1.Size = new System.Drawing.Size(984, 464);
+            this.splitContainer1.Size = new System.Drawing.Size(984, 560);
             this.splitContainer1.SplitterDistance = 491;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.dataGridView1.Location = new System.Drawing.Point(14, 299);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.Size = new System.Drawing.Size(426, 158);
+            this.dataGridView1.TabIndex = 18;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "First Name";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Last Name";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Phone";
+            this.Column3.Name = "Column3";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 47);
+            this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(984, 47);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "MUI Controls - C#";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // muiTextBox2
+            // 
+            this.muiTextBox2.BackColor = System.Drawing.Color.White;
+            this.muiTextBox2.BorderColor = System.Drawing.Color.DimGray;
+            this.muiTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.muiTextBox2.BorderSize = 1;
+            this.muiTextBox2.BoxStyle = MUIControls.muiTextBox.Style.Round;
+            this.muiTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muiTextBox2.Location = new System.Drawing.Point(172, 223);
+            this.muiTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.muiTextBox2.Name = "muiTextBox2";
+            this.muiTextBox2.Padding = new System.Windows.Forms.Padding(7, 5, 5, 7);
+            this.muiTextBox2.PasswordChar = '\0';
+            this.muiTextBox2.PlaceholderText = "";
+            this.muiTextBox2.Size = new System.Drawing.Size(150, 30);
+            this.muiTextBox2.TabIndex = 27;
+            this.muiTextBox2.Text = "Manojbabu";
+            this.muiTextBox2.UseSystemPasswordChar = false;
+            // 
+            // muiTextBox3
+            // 
+            this.muiTextBox3.BackColor = System.Drawing.Color.White;
+            this.muiTextBox3.BorderColor = System.Drawing.Color.DimGray;
+            this.muiTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.muiTextBox3.BorderSize = 1;
+            this.muiTextBox3.BoxStyle = MUIControls.muiTextBox.Style.Circle;
+            this.muiTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muiTextBox3.Location = new System.Drawing.Point(330, 223);
+            this.muiTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.muiTextBox3.Name = "muiTextBox3";
+            this.muiTextBox3.Padding = new System.Windows.Forms.Padding(7, 5, 5, 7);
+            this.muiTextBox3.PasswordChar = '\0';
+            this.muiTextBox3.PlaceholderText = "";
+            this.muiTextBox3.Size = new System.Drawing.Size(150, 30);
+            this.muiTextBox3.TabIndex = 24;
+            this.muiTextBox3.Text = "Manojbabu";
+            this.muiTextBox3.UseSystemPasswordChar = false;
+            // 
+            // muiTextBox1
+            // 
+            this.muiTextBox1.BackColor = System.Drawing.Color.White;
+            this.muiTextBox1.BorderColor = System.Drawing.Color.DarkGray;
+            this.muiTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.muiTextBox1.BorderSize = 1;
+            this.muiTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muiTextBox1.Location = new System.Drawing.Point(14, 223);
+            this.muiTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.muiTextBox1.Name = "muiTextBox1";
+            this.muiTextBox1.Padding = new System.Windows.Forms.Padding(7, 5, 5, 7);
+            this.muiTextBox1.PasswordChar = '\0';
+            this.muiTextBox1.PlaceholderText = "";
+            this.muiTextBox1.Size = new System.Drawing.Size(150, 30);
+            this.muiTextBox1.TabIndex = 23;
+            this.muiTextBox1.Text = "Manojbabu";
+            this.muiTextBox1.UseSystemPasswordChar = false;
             // 
             // muiRadioButton3
             // 
@@ -166,49 +288,12 @@
             // 
             // muiProgressBar1
             // 
-            this.muiProgressBar1.ChannelColor = System.Drawing.Color.LightBlue;
-            this.muiProgressBar1.ChannelHeight = 10;
-            this.muiProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.muiProgressBar1.ForeColor = System.Drawing.Color.White;
+            this.muiProgressBar1.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.muiProgressBar1.Location = new System.Drawing.Point(14, 156);
             this.muiProgressBar1.Name = "muiProgressBar1";
             this.muiProgressBar1.Size = new System.Drawing.Size(466, 12);
-            this.muiProgressBar1.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.muiProgressBar1.SliderHeight = 10;
             this.muiProgressBar1.TabIndex = 19;
             this.muiProgressBar1.Value = 50;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 242);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.Size = new System.Drawing.Size(426, 210);
-            this.dataGridView1.TabIndex = 18;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "First Name";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Last Name";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Phone";
-            this.Column3.Name = "Column3";
             // 
             // muiComboBox4
             // 
@@ -328,7 +413,7 @@
             // 
             this.muiButton2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.muiButton2.BorderColor = System.Drawing.Color.Teal;
-            this.muiButton2.BorderRadius = 15;
+            this.muiButton2.BorderRadius = 5;
             this.muiButton2.BorderSize = 1;
             this.muiButton2.FlatAppearance.BorderSize = 0;
             this.muiButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -358,6 +443,115 @@
             this.muiButton1.Text = "muiButton1";
             this.muiButton1.UseVisualStyleBackColor = false;
             // 
+            // muiTextBox4
+            // 
+            this.muiTextBox4.AutoCompleteCustomSource.AddRange(new string[] {
+            "Hello",
+            "Hi",
+            "How are you"});
+            this.muiTextBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.muiTextBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.muiTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(48)))), ((int)(((byte)(62)))));
+            this.muiTextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.muiTextBox4.BorderFocusColor = System.Drawing.Color.CornflowerBlue;
+            this.muiTextBox4.BorderSize = 1;
+            this.muiTextBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.muiTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muiTextBox4.ForeColor = System.Drawing.Color.White;
+            this.muiTextBox4.Location = new System.Drawing.Point(171, 223);
+            this.muiTextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.muiTextBox4.Name = "muiTextBox4";
+            this.muiTextBox4.Padding = new System.Windows.Forms.Padding(7, 5, 5, 7);
+            this.muiTextBox4.PasswordChar = '\0';
+            this.muiTextBox4.PlaceholderText = "";
+            this.muiTextBox4.Size = new System.Drawing.Size(150, 30);
+            this.muiTextBox4.TabIndex = 30;
+            this.muiTextBox4.Text = "manojbabu";
+            this.muiTextBox4.UseSystemPasswordChar = false;
+            // 
+            // muiTabControl1
+            // 
+            this.muiTabControl1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.muiTabControl1.ButtonBackColor = System.Drawing.Color.WhiteSmoke;
+            this.muiTabControl1.ButtonForeColor = System.Drawing.Color.Black;
+            this.muiTabControl1.ButtonSelectedForeColor = System.Drawing.Color.CornflowerBlue;
+            this.muiTabControl1.Controls.Add(this.tabPage1);
+            this.muiTabControl1.Controls.Add(this.tabPage2);
+            this.muiTabControl1.Controls.Add(this.tabPage3);
+            this.muiTabControl1.Controls.Add(this.tabPage4);
+            this.muiTabControl1.HideButton = false;
+            this.muiTabControl1.ItemSize = new System.Drawing.Size(100, 30);
+            this.muiTabControl1.LineBackColor = System.Drawing.Color.Gainsboro;
+            this.muiTabControl1.LineForeColor = System.Drawing.Color.LightSeaGreen;
+            this.muiTabControl1.Location = new System.Drawing.Point(25, 299);
+            this.muiTabControl1.Name = "muiTabControl1";
+            this.muiTabControl1.SelectedIndex = 0;
+            this.muiTabControl1.Size = new System.Drawing.Size(439, 189);
+            this.muiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.muiTabControl1.Style = MUIControls.muiTabControl.TabStyle.Line;
+            this.muiTabControl1.TabIndex = 26;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(431, 151);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(431, 151);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(431, 151);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(431, 151);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // muiTextBox5
+            // 
+            this.muiTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
+            this.muiTextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.muiTextBox5.BorderFocusColor = System.Drawing.Color.CornflowerBlue;
+            this.muiTextBox5.BorderSize = 1;
+            this.muiTextBox5.BoxStyle = MUIControls.muiTextBox.Style.Round;
+            this.muiTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muiTextBox5.ForeColor = System.Drawing.Color.White;
+            this.muiTextBox5.Location = new System.Drawing.Point(329, 223);
+            this.muiTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.muiTextBox5.Name = "muiTextBox5";
+            this.muiTextBox5.Padding = new System.Windows.Forms.Padding(7, 5, 5, 7);
+            this.muiTextBox5.PasswordChar = '\0';
+            this.muiTextBox5.PlaceholderText = "";
+            this.muiTextBox5.Size = new System.Drawing.Size(150, 30);
+            this.muiTextBox5.TabIndex = 29;
+            this.muiTextBox5.Text = "Manojbabu";
+            this.muiTextBox5.UnderlinedStyle = true;
+            this.muiTextBox5.UseSystemPasswordChar = false;
+            // 
             // muiRadioButton4
             // 
             this.muiRadioButton4.AutoSize = true;
@@ -372,6 +566,28 @@
             this.muiRadioButton4.Text = "muiRadioButton4";
             this.muiRadioButton4.UnCheckedColor = System.Drawing.Color.DodgerBlue;
             this.muiRadioButton4.UseVisualStyleBackColor = true;
+            // 
+            // muiTextBox6
+            // 
+            this.muiTextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(48)))), ((int)(((byte)(62)))));
+            this.muiTextBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.muiTextBox6.BorderFocusColor = System.Drawing.Color.CornflowerBlue;
+            this.muiTextBox6.BorderSize = 1;
+            this.muiTextBox6.BoxStyle = MUIControls.muiTextBox.Style.Circle;
+            this.muiTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muiTextBox6.ForeColor = System.Drawing.Color.White;
+            this.muiTextBox6.Location = new System.Drawing.Point(13, 223);
+            this.muiTextBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.muiTextBox6.Name = "muiTextBox6";
+            this.muiTextBox6.Padding = new System.Windows.Forms.Padding(7, 5, 5, 7);
+            this.muiTextBox6.PasswordChar = '\0';
+            this.muiTextBox6.PlaceholderText = "";
+            this.muiTextBox6.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.muiTextBox6.Size = new System.Drawing.Size(150, 30);
+            this.muiTextBox6.TabIndex = 28;
+            this.muiTextBox6.Text = "1235";
+            this.muiTextBox6.UseSystemPasswordChar = false;
+            this.muiTextBox6.Text_Changed += new System.EventHandler(this.muiTextBox6_Text_Changed);
             // 
             // muiRadioButton5
             // 
@@ -407,22 +623,18 @@
             // 
             // muiProgressBar2
             // 
-            this.muiProgressBar2.ChannelColor = System.Drawing.Color.CadetBlue;
-            this.muiProgressBar2.ChannelHeight = 10;
-            this.muiProgressBar2.ForeBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.muiProgressBar2.ForeColor = System.Drawing.Color.Black;
+            this.muiProgressBar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(48)))), ((int)(((byte)(62)))));
+            this.muiProgressBar2.ForeColor = System.Drawing.Color.LimeGreen;
             this.muiProgressBar2.Location = new System.Drawing.Point(11, 156);
             this.muiProgressBar2.Name = "muiProgressBar2";
             this.muiProgressBar2.Size = new System.Drawing.Size(466, 12);
-            this.muiProgressBar2.SliderColor = System.Drawing.Color.LimeGreen;
-            this.muiProgressBar2.SliderHeight = 10;
             this.muiProgressBar2.TabIndex = 20;
-            this.muiProgressBar2.Value = 50;
+            this.muiProgressBar2.Value = 75;
             // 
             // muiComboBox5
             // 
             this.muiComboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
-            this.muiComboBox5.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.muiComboBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.muiComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.muiComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.muiComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -572,102 +784,18 @@
             this.muiButton6.Text = "muiButton6";
             this.muiButton6.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 47);
-            this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(984, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manu\'s UI Controls";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // muiTabControl1
-            // 
-            this.muiTabControl1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.muiTabControl1.ButtonBackColor = System.Drawing.Color.WhiteSmoke;
-            this.muiTabControl1.ButtonForeColor = System.Drawing.Color.Black;
-            this.muiTabControl1.ButtonSelectedForeColor = System.Drawing.Color.CornflowerBlue;
-            this.muiTabControl1.Controls.Add(this.tabPage1);
-            this.muiTabControl1.Controls.Add(this.tabPage2);
-            this.muiTabControl1.Controls.Add(this.tabPage3);
-            this.muiTabControl1.Controls.Add(this.tabPage4);
-            this.muiTabControl1.HideButton = false;
-            this.muiTabControl1.ItemSize = new System.Drawing.Size(100, 30);
-            this.muiTabControl1.LineBackColor = System.Drawing.Color.Gainsboro;
-            this.muiTabControl1.LineForeColor = System.Drawing.Color.LightSeaGreen;
-            this.muiTabControl1.Location = new System.Drawing.Point(25, 247);
-            this.muiTabControl1.Name = "muiTabControl1";
-            this.muiTabControl1.SelectedIndex = 0;
-            this.muiTabControl1.Size = new System.Drawing.Size(439, 189);
-            this.muiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.muiTabControl1.Style = MUIControls.muiTabControl.TabStyle.Line;
-            this.muiTabControl1.TabIndex = 26;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(431, 151);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(431, 151);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(431, 151);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(431, 151);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 511);
+            this.ClientSize = new System.Drawing.Size(984, 607);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ModernUI Controls Tetsing";
+            this.Text = "MUI Controls Tetsing";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -722,6 +850,12 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private MUIControls.muiTextBox muiTextBox1;
+        private MUIControls.muiTextBox muiTextBox2;
+        private MUIControls.muiTextBox muiTextBox3;
+        private MUIControls.muiTextBox muiTextBox4;
+        private MUIControls.muiTextBox muiTextBox5;
+        private MUIControls.muiTextBox muiTextBox6;
     }
 }
 

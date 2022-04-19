@@ -61,8 +61,19 @@
     <Compile Include="muiTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="muiTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="muiTextBox.Designer.cs">
+      <DependentUpon>muiTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="muiTextBox.resx">
+      <DependentUpon>muiTextBox.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

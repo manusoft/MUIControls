@@ -16,6 +16,7 @@ namespace MUIControls
         private Color borderColor = Color.Black;
         private Color selectionColor = Color.LightSeaGreen;
         private bool underlinedStyle = false;
+        private DrawMode drawMode = DrawMode.OwnerDrawFixed;
 
         public muiComboBox()
         {
@@ -24,21 +25,21 @@ namespace MUIControls
             SetStyle(ControlStyles.UserPaint, true);
         }
 
-        public bool UnderlinedStyle { get => underlinedStyle; set { underlinedStyle=value; this.Invalidate(); } }
+        public bool UnderlinedStyle { get => underlinedStyle; set { underlinedStyle = value; this.Invalidate(); } }
 
-        public Color BorderColor { get => borderColor; set { borderColor=value; this.Invalidate(); } }
+        public Color BorderColor { get => borderColor; set { borderColor = value; this.Invalidate(); } }
 
-        public Color SelectionColor { get => selectionColor; set => selectionColor=value; }
+        public Color SelectionColor { get => selectionColor; set => selectionColor = value; }
 
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
-            if (this.DrawMode== DrawMode.Normal)
-            {
-                this.DrawMode = DrawMode.OwnerDrawFixed;
-            }
-        }
+            if (this.DrawMode != DrawMode.OwnerDrawFixed) this.DrawMode = DrawMode.OwnerDrawFixed;
 
+            if (this.DropDownStyle != ComboBoxStyle.DropDownList) this.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            if (this.FlatStyle != FlatStyle.System) this.FlatStyle = FlatStyle.System;
+        }
 
         protected override void OnDrawItem(DrawItemEventArgs e)
         {
@@ -66,19 +67,23 @@ namespace MUIControls
             {
                 g.Clear(BackColor);
 
-                Rectangle clientArea = new Rectangle(0, 0, ClientRectangle.Width -1, ClientRectangle.Height-1 );
-                Rectangle rectIcon = new Rectangle(this.Width - 16, (this.Height - 5) / 2, 10, 5);
+                Rectangle clientArea = new Rectangle(0, 0, ClientRectangle.Width - 1, ClientRectangle.Height - 1);
+                Rectangle rectIcon = new Rectangle(this.Width - 15, (this.Height - 5) / 2, 10, 5);
 
                 if (BackColor.GetBrightness() >= 0.6F)
                     arrowColor = Color.Black;
                 else arrowColor = Color.White;
 
                 // Draw Arrorw
-                g.SmoothingMode = SmoothingMode.HighQuality ;
+                g.SmoothingMode = SmoothingMode.HighQuality;
                 GraphicsPath path = new GraphicsPath();
-                path.AddLine(rectIcon.X, rectIcon.Y, rectIcon.X + (10.0F / 2), rectIcon.Bottom);
-                path.AddLine(rectIcon.X + (10.0F / 2), rectIcon.Bottom, rectIcon.Right, rectIcon.Y);
+                path.AddLine(rectIcon.X, rectIcon.Y, rectIcon.X + 5.0F, rectIcon.Bottom);
+                path.AddLine(rectIcon.X + 5.0F, rectIcon.Bottom, rectIcon.Right, rectIcon.Y);
                 g.DrawPath(new Pen(arrowColor, 1.5F), path);
+
+                //Draw Dropdown Polygon
+                //var arrows = new[] { new Point(rectIcon.X, rectIcon.Y), new Point(rectIcon.X + 12, rectIcon.Y), new Point(rectIcon.X + 6, rectIcon.Y + 6) };
+                //g.FillPolygon(new SolidBrush(arrowColor), arrows);
 
                 if (UnderlinedStyle)
                 {
@@ -92,9 +97,9 @@ namespace MUIControls
                 }
 
                 //g.DrawString(base.Text, base.Font, new SolidBrush (ForeColor),base.ClientRectangle , format);
-                TextRenderer.DrawText(g, this.Text, this.Font, new Point (2,3) , this.ForeColor, this.BackColor  );
+                TextRenderer.DrawText(g, this.Text, this.Font, new Point(2, 3), this.ForeColor, this.BackColor);
                 g.Dispose();
-               
+
             }
             base.OnPaint(e);
         }
