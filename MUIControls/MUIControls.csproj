@@ -67,6 +67,9 @@
     <Compile Include="muiTextBox.Designer.cs">
       <DependentUpon>muiTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="muiToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>

@@ -35,6 +35,9 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.muiToggleButton3 = new MUIControls.muiToggleButton();
+            this.muiToggleButton2 = new MUIControls.muiToggleButton();
+            this.muiToggleButton1 = new MUIControls.muiToggleButton();
             this.muiTextBox2 = new MUIControls.muiTextBox();
             this.muiTextBox3 = new MUIControls.muiTextBox();
             this.muiTextBox1 = new MUIControls.muiTextBox();
@@ -51,6 +54,9 @@
             this.muiButton3 = new MUIControls.muiButton();
             this.muiButton2 = new MUIControls.muiButton();
             this.muiButton1 = new MUIControls.muiButton();
+            this.muiToggleButton4 = new MUIControls.muiToggleButton();
+            this.muiToggleButton5 = new MUIControls.muiToggleButton();
+            this.muiToggleButton6 = new MUIControls.muiToggleButton();
             this.muiTextBox4 = new MUIControls.muiTextBox();
             this.muiTabControl1 = new MUIControls.muiTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -90,6 +96,9 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.splitContainer1.Panel1.Controls.Add(this.muiToggleButton3);
+            this.splitContainer1.Panel1.Controls.Add(this.muiToggleButton2);
+            this.splitContainer1.Panel1.Controls.Add(this.muiToggleButton1);
             this.splitContainer1.Panel1.Controls.Add(this.muiTextBox2);
             this.splitContainer1.Panel1.Controls.Add(this.muiTextBox3);
             this.splitContainer1.Panel1.Controls.Add(this.muiTextBox1);
@@ -111,6 +120,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
+            this.splitContainer1.Panel2.Controls.Add(this.muiToggleButton4);
+            this.splitContainer1.Panel2.Controls.Add(this.muiToggleButton5);
+            this.splitContainer1.Panel2.Controls.Add(this.muiToggleButton6);
             this.splitContainer1.Panel2.Controls.Add(this.muiTextBox4);
             this.splitContainer1.Panel2.Controls.Add(this.muiTabControl1);
             this.splitContainer1.Panel2.Controls.Add(this.muiTextBox5);
@@ -143,7 +155,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 299);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 326);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.Size = new System.Drawing.Size(426, 158);
@@ -185,6 +197,53 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MUI Controls - C#";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // muiToggleButton3
+            // 
+            this.muiToggleButton3.AutoSize = true;
+            this.muiToggleButton3.Checked = true;
+            this.muiToggleButton3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.muiToggleButton3.Location = new System.Drawing.Point(330, 271);
+            this.muiToggleButton3.MinimumSize = new System.Drawing.Size(45, 22);
+            this.muiToggleButton3.Name = "muiToggleButton3";
+            this.muiToggleButton3.OffBackColor = System.Drawing.Color.Gray;
+            this.muiToggleButton3.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.muiToggleButton3.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.muiToggleButton3.OnToggleColor = System.Drawing.Color.RosyBrown;
+            this.muiToggleButton3.Size = new System.Drawing.Size(45, 22);
+            this.muiToggleButton3.SolidStyle = false;
+            this.muiToggleButton3.TabIndex = 30;
+            this.muiToggleButton3.UseVisualStyleBackColor = true;
+            // 
+            // muiToggleButton2
+            // 
+            this.muiToggleButton2.AutoSize = true;
+            this.muiToggleButton2.Checked = true;
+            this.muiToggleButton2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.muiToggleButton2.Location = new System.Drawing.Point(172, 271);
+            this.muiToggleButton2.MinimumSize = new System.Drawing.Size(45, 22);
+            this.muiToggleButton2.Name = "muiToggleButton2";
+            this.muiToggleButton2.OffBackColor = System.Drawing.Color.Gray;
+            this.muiToggleButton2.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.muiToggleButton2.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.muiToggleButton2.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.muiToggleButton2.Size = new System.Drawing.Size(45, 22);
+            this.muiToggleButton2.TabIndex = 29;
+            this.muiToggleButton2.UseVisualStyleBackColor = true;
+            // 
+            // muiToggleButton1
+            // 
+            this.muiToggleButton1.AutoSize = true;
+            this.muiToggleButton1.Location = new System.Drawing.Point(12, 271);
+            this.muiToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.muiToggleButton1.Name = "muiToggleButton1";
+            this.muiToggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.muiToggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.muiToggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.muiToggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.muiToggleButton1.Size = new System.Drawing.Size(45, 22);
+            this.muiToggleButton1.TabIndex = 28;
+            this.muiToggleButton1.UseVisualStyleBackColor = true;
             // 
             // muiTextBox2
             // 
@@ -443,6 +502,55 @@
             this.muiButton1.Text = "muiButton1";
             this.muiButton1.UseVisualStyleBackColor = false;
             // 
+            // muiToggleButton4
+            // 
+            this.muiToggleButton4.AutoSize = true;
+            this.muiToggleButton4.Checked = true;
+            this.muiToggleButton4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.muiToggleButton4.Location = new System.Drawing.Point(331, 271);
+            this.muiToggleButton4.MinimumSize = new System.Drawing.Size(45, 22);
+            this.muiToggleButton4.Name = "muiToggleButton4";
+            this.muiToggleButton4.OffBackColor = System.Drawing.Color.Gray;
+            this.muiToggleButton4.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.muiToggleButton4.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.muiToggleButton4.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.muiToggleButton4.Size = new System.Drawing.Size(45, 22);
+            this.muiToggleButton4.TabIndex = 33;
+            this.muiToggleButton4.UseVisualStyleBackColor = true;
+            // 
+            // muiToggleButton5
+            // 
+            this.muiToggleButton5.AutoSize = true;
+            this.muiToggleButton5.Checked = true;
+            this.muiToggleButton5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.muiToggleButton5.Location = new System.Drawing.Point(173, 271);
+            this.muiToggleButton5.MinimumSize = new System.Drawing.Size(45, 22);
+            this.muiToggleButton5.Name = "muiToggleButton5";
+            this.muiToggleButton5.OffBackColor = System.Drawing.Color.Gray;
+            this.muiToggleButton5.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.muiToggleButton5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.muiToggleButton5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.muiToggleButton5.Size = new System.Drawing.Size(45, 22);
+            this.muiToggleButton5.TabIndex = 32;
+            this.muiToggleButton5.UseVisualStyleBackColor = true;
+            // 
+            // muiToggleButton6
+            // 
+            this.muiToggleButton6.AutoSize = true;
+            this.muiToggleButton6.Checked = true;
+            this.muiToggleButton6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.muiToggleButton6.Location = new System.Drawing.Point(13, 271);
+            this.muiToggleButton6.MinimumSize = new System.Drawing.Size(45, 22);
+            this.muiToggleButton6.Name = "muiToggleButton6";
+            this.muiToggleButton6.OffBackColor = System.Drawing.Color.Gray;
+            this.muiToggleButton6.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.muiToggleButton6.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.muiToggleButton6.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.muiToggleButton6.Size = new System.Drawing.Size(45, 22);
+            this.muiToggleButton6.SolidStyle = false;
+            this.muiToggleButton6.TabIndex = 31;
+            this.muiToggleButton6.UseVisualStyleBackColor = true;
+            // 
             // muiTextBox4
             // 
             this.muiTextBox4.AutoCompleteCustomSource.AddRange(new string[] {
@@ -483,7 +591,7 @@
             this.muiTabControl1.ItemSize = new System.Drawing.Size(100, 30);
             this.muiTabControl1.LineBackColor = System.Drawing.Color.Gainsboro;
             this.muiTabControl1.LineForeColor = System.Drawing.Color.LightSeaGreen;
-            this.muiTabControl1.Location = new System.Drawing.Point(25, 299);
+            this.muiTabControl1.Location = new System.Drawing.Point(25, 326);
             this.muiTabControl1.Name = "muiTabControl1";
             this.muiTabControl1.SelectedIndex = 0;
             this.muiTabControl1.Size = new System.Drawing.Size(439, 189);
@@ -856,6 +964,12 @@
         private MUIControls.muiTextBox muiTextBox4;
         private MUIControls.muiTextBox muiTextBox5;
         private MUIControls.muiTextBox muiTextBox6;
+        private MUIControls.muiToggleButton muiToggleButton3;
+        private MUIControls.muiToggleButton muiToggleButton2;
+        private MUIControls.muiToggleButton muiToggleButton1;
+        private MUIControls.muiToggleButton muiToggleButton4;
+        private MUIControls.muiToggleButton muiToggleButton5;
+        private MUIControls.muiToggleButton muiToggleButton6;
     }
 }
 
